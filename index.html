@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="assets/images/cube_vector.png" type="image/x-icon">
-    <title>Quick Solve Cube</title>
+    <title>SpeedCube</title>
   </head>
   <body>
     <header>
@@ -19,12 +19,12 @@
     <aside>
       <nav>
         <a href="#intro">Introduction</a>
-        <a href="#intro">Cross</a>
-        <a href="#intro">F2L</a>
-        <a href="#intro">Edge OLL</a>
-        <a href="#intro">OLL Finish</a>
-        <a href="#intro">Corner PLL</a>
-        <a href="#intro">Edge PLL</a>
+        <a href="#cross">Cross</a>
+        <a href="#f2l">F2L</a>
+        <a href="#eoll">Edge OLL</a>
+        <a href="#ocll">Corner OLL</a>
+        <a href="#cpll">Corner PLL</a>
+        <a href="#epll">Edge PLL</a>
       </nav>
     </aside>
 
@@ -36,18 +36,180 @@
       </section>
 
       <section id="intro">
-        <p>So you've gone through the beginner's method a few times, and maybe you can solve the cube unaided every time. Maybe you're even getting pretty good, and can consistently do it in under 2 minutes. But now you're hooked. You aren't satisfied with people standing around for 2 minutes while you solve it because that guy at the office didn't believe you. You want to be one of those people, who can just look at a cube, and ten seconds later boom, it's done. You want a taste of the high-flying, rock and roll lifestyle of the speedcuber. Well here is where your journey begins.</p>
+        <p>So you've gone through the beginner's method a few times. Maybe you're even getting pretty good, and can consistently do it in under 2 minutes. But now you're hooked. You want to be one of those people, who can just look at a cube, and ten seconds later boom, it's done. Well here is where your journey begins.  
+        </p>
         <br>
-        <p>This guide takes you through every step of the CFOP speedcubing method. The name CFOP comes from the steps involved (Cross, F2L, OLL, PLL), and you may also see it referred to as the Fridrich method (after Jessica Fridrich, who helped turn it into the most popular speedcubing technique). Learning and practising this method can take you all the way to the top of the game - it is used by a lot of the top speedcubers to set world records, including the current staggeringly low time of 2.76 seconds.</p>
+        <p>This guide takes you through every step of the CFOP speedcubing method. The name CFOP comes from the steps involved (Cross, First 2 Layers, Orientation of Last Layer, Permutation of Last Layer), and you may also see it referred to as the Fridrich method (after Jessica Fridrich, who helped turn it into the most popular speedcubing technique). Learning and practising this method can take you all the way to the top of the game - it is used by a lot of the top speedcubers to set world records, including the current staggeringly low time of 2.76 seconds.
+        </p>
         <br>
-        <p>Full CFOP takes some dedication. If you've just arrived at this website looking to learn how to solve a Rubik's Cube and thought to yourself "Beginner my left foot, I'm starting with the speedcubing guide, that sounds fast", then I warn you now: here be dragons. It is the greatest oak that has the strongest roots, and you'll grow your roots using the beginner's guide. Go on, I'll wait right here.</p>
+      </section>
+
+      <section id="cross">
+        <h2>Cross</h2>
+        <img class="rubik" src="assets/images/solved_cross.png" alt="white cross">
+        <p>Hold your cube in your hands with the white centre facing down to improve your solution time. With a lot of practice you won't need to see the white cross because you will know what's going on down there according to the color scheme of your puzzle, your moves and what you see on the top. This way you don't have to turn your cube around, saving this way a lot of time. Some speedcubers prefer solving the cross on the left side but if you choose to make it on the bottom you'll have a nice lookahead and is more suitable for finger tricks. The only bad thing is that it's weird for beginners and you can't notice in time if you messed the cross up.
+        </p>
         <br>
-        <p>Are you back? Good. Now that you know the beginner method, you can begin to introduce the concepts in this guide into your solves. You needn't go through the steps in order - you can learn and practise each bit independently, falling back on the beginner method as and when you need it.</p>
+        <p>It would be more intuitive to solve it on the top and turning upside down when it's done, but you'll need to learn it this way if you want to reach times below 20 seconds. To encourage you I have to tell that the knowledge of the next step (F2L) will help you a lot in the understanding of the manipulation of the cube upside down. You will discover the advantages of this perspective and you will admit that this is the best way of doing it. And if you really want to master the Rubik's Cube I recommend you to examine the cube and try to plan all the necessary steps and execute them without watching.
+        </p>
+        <br>
+
+        <h3>Example Cases</h3>
+        <figure class="caseExamples">
+          <figure class="case">
+            <img class="caseImage" src="assets/images/cross_case_1.png" alt="cross case of white facing up and in the correct color">
+            <figcaption class="algorithm">F2</figcaption>
+          </figure>
+          <figure class="case">
+            <img class="caseImage" src="assets/images/cross_case_2.png" alt="cross case of white fliped or facing the side">
+            <figcaption class="algorithm">U' R' F R</figcaption>
+          </figure>
+          <figure class="case">
+            <img class="caseImage" src="assets/images/cross_case_3.png" alt="cross case of 2 white edges of the opposite side">
+            <figcaption class="algorithm">F R2 D2</figcaption>
+          </figure>
+        </figure>
+      </section>
+
+      <section id="f2l">
+        <h2>First Two Layers (F2L)</h2>
+        <img class="rubik" src="assets/images/solved_f2l.png" alt="solved corners and edges of the first two layers">
+        <p>The first two layers (F2L) of the Rubik's Cube are solved simultaneously rather than individually, reducing the solve time considerably. In the second step of the Fridrich method we solve the four white corner pieces and the middle layer edges attached to them. The 41 possible cases in this step can be solved intuitively but it's useful to have a table of algorithms printed on your desk for guidance.
+        </p>
+        <br>
+        <p>To be efficient try not to turn your cube around while solving and look ahead as much as possible. Familiarize with the algorithms so you can do them even with your eyes closed. Here are two simple examples:
+        </p>
+
+        <figure class="caseExamples">
+          <figure class="case">
+            <img class="caseImage" src="assets/images/f2l_case_1.png" alt="simple f2l case of white faces side with blue and red facing top">
+            <figcaption class="algorithm">R U R'</figcaption>
+          </figure>
+          <figure class="case">
+            <img class="caseImage" src="assets/images/f2l_case_2.png" alt="simple f2l case of both edge and corner already connected correctly">
+            <figcaption class="algorithm">R U' R'</figcaption>
+          </figure>
+        </figure>
+
+        <p>The corner piece is paired with the edge piece, and the pair is inserted into the right place. Easy peasy. There are, however, a few situations you might find yourself in where this procedure is not quite so obvious. Here's a similar example:
+        </p>
+        <figure class="caseExamples">
+          <figure class="case">
+            <img class="caseImage" src="assets/images/f2l_case_3.png" alt="f2l case where white faces up">
+            <figcaption class="algorithm">(R U2 R') (U R U' R')</figcaption>
+          </figure>
+        </figure>
+
+        <p>This can't be solved as simply, but the idea is exactly the same. The two sections of the algorithm show the two steps in the same procedure as before - the first bracketed section shows the pairing of the two cubies, and the second section shows the pair being inserted correctly. You simply repeat these steps for each of the four corners, and solve each F2L pair in turn.
+        </p>
+        <br>
+        <p>Rather than relying on a big table of algorithms, F2L is best done intuitively. This is for the same reason as the cross in step 1 - you need to be able to look at the cube and produce an efficient way of solving each F2L pair. Just like with the happy red-green pieces before, sometimes you will come to an F2L situation that you've solved many times, but solve it in a different way because you want to set up the next F2L pair for easy solving.
+        </p>
+        <br>
+        <p>However, there are resources on where you can see each F2L case and how to solve it. They are there so you can see an optimal way to solve each case, but try to not rely on them for every single F2L case you encounter. Instead, really try and solve each case intuitively. Don't worry if you struggle! It takes practice, and the next little section is all about how to be better at F2L.
+        </p>
+      </section>
+
+      <section id="eoll">
+        <h2>Edge Orientation of Last Layers (EOLL)</h2>
+        <img class="rubik" src="assets/images/solved_eoll.png" alt="all yellow edges facing forming a cross">
+        <p>Now, when you're solving the cube using the full CFOP method, the whole last layer is supposed to be solved in two steps: OLL and PLL.
+        </p>
+        <br>
+        <p>These steps are solved using only one algorithm each. So the first algorithm orients all the last layer pieces (makes them all face the right way, i.e. with yellow on top) and the second permutes them (puts them all in the right places). 'Orientation' always refers to the way a cubie is rotated, and 'permutation' always refers to where it is on the cube. As you might well imagine, this means that full CFOP has a lot of algorithms in it - one for every situation you might encounter. And every situation actually has multiple algorithms for your learning pleasure.
+        </p>
+        <br>
+        <p>So instead, I'm going to show you a slightly different way of approaching the last layer, so that you only need to know a few algorithms instead. Then, once you know those few algorithms, you can begin to learn the rest of the last layer algorithms while always being able to fall back on the ones you know. What's even better is that these few algorithms are used in the full CFOP method anyway, so we're not wasting any time!
+        </p>
+        <br>
+        <p>The way it works is to split up the steps into two smaller steps each. So for OLL, instead of orienting every piece in the last layer at once, we'll do the edges first and then the corners. This is called 2-look OLL, as it's OLL but done in two steps. Makes sense. PLL gets the same treatment, as we'll be permuting the corners first and then the edges. That's called 2-look PLL.
+        </p>
+        <br>
+        <p>Here are the algorithms to solve the edges. Luckly, there are only 3 cases!
+        </p>
+
+        <figure class="caseExamples"> 
+          <figure class="case">
+            <img class="caseImage" src="assets/images/dot_oll.png" alt="oll case where no yellow faces top other than center">
+            <figcaption class="algorithm">F (R U R' U') S (R U R' U') f'</figcaption>
+          </figure>
+          <figure class="case">
+            <img class="caseImage" src="assets/images/l_oll.png" alt="oll case where yellow forms a line">
+            <figcaption class="algorithm">f (R U R' U') f'</figcaption>
+          </figure>
+          <figure class="case">
+            <img class="caseImage" src="assets/images/line_oll.png" alt="oll case where yellow forms an L shape that is also not a line">
+            <figcaption class="algorithm">F (R U R' U') F'</figcaption>
+          </figure>
+        </figure>
+      </section>
+
+      <section id="ocll">
+        <h2>Corner Orientation of Last Layer (OCLL)</h2>
+        <img class="rubik" src="assets/images/solved_oll.png" alt="Solved oll">
+        <p>Just like the beginner guide, the rest of the last layer isn't an intuitive thing you can just work out (if you can, you and your mega-brain should probably be working for NASA or something). That's why there's a big scary table of algorithms lurking on the algorithms page, but because we're using our clever 2-look shortcut, you only need to know the following seven. They don't look scary at all, and there's even some triggers in there that you've already seen!
+        </p>
+        <br><br><br>
+        <figure class="caseExamples">
+          <figure class="case">
+            <img class="caseImage" src="assets/images/sune.png" alt="sune">
+            <figcaption class="algorithm">(R' U2 R) U (R' U R)</figcaption>
+          </figure>
+          <figure class="case">
+            <img class="caseImage" src="assets/images/sune_reverse.png" alt="reversed sune">
+            <figcaption class="algorithm">(R U2 R') U' (R U' R')</figcaption>
+          </figure>
+          <figure class="case">
+            <img class="caseImage" src="assets/images/double_diamond.png" alt="double sune">
+            <figcaption class="algorithm">F' (r U R' U') (r' F R)</figcaption>
+          </figure>
+          <figure class="case">
+            <img class="caseImage" src="assets/images/hammer_side.png" alt="hammer shape on the side">
+            <figcaption class="algorithm">(r U R' U') (r' F R F')</figcaption>
+          </figure>
+          <figure class="case">
+            <img class="caseImage" src="assets/images/hammer_front.png" alt="hammer shape facing foward">
+            <figcaption class="algorithm">R2 D (R' U2 R) D' (R' U2 R')</figcaption>
+          </figure>
+          <figure class="case">
+            <img class="caseImage" src="assets/images/cross_front.png" alt="cross with yellow side facing side and forward">
+            <figcaption class="algorithm">F (R U R' U') (R U R' U') (R U R' U') F'</figcaption>
+          </figure>
+          <figure class="case">
+            <img class="caseImage" src="assets/images/cross_side.png" alt="cross with yellow side facing forward and backward">
+            <figcaption class="algorithm">R U2 (R2' U' R2 U') (R2' U2 R)</figcaption>
+          </figure>
+        </figure>
+      </section>
+
+      <section id="cpll">
+        <h2>Corner Permutation of Last Layers</h2>
+        <img class="rubik" src="assets/images/solved_cll.png" alt="The last layer with all corners solved">
+        <p>First, you need to look for 'headlights' - a face where both top layer corners are the same colour. In the following example, you can see that the 'headlights' are on the Front face, as the top layer corners are both blue.
+        </p>
+        <br>
+        <p>First, you need to look for 'headlights' - a face where both top layer corners are the same colour. In the following example, you can see that the 'headlights' are on the Front face, as the top layer corners are both blue.
+        </p><br>
+        <figure class="caseExamples">
+          <figure class="case">
+            <img class="caseImage" src="assets/images/headlight.png" alt="headlights on the front">
+          </figure>
+        </figure>
+        <p>You then hold the headlights so they are facing to the right, and perform this algorithm:
+        </p>
+        <figure class="caseExamples">
+          <figure class="case">
+            <img class="caseImage" src="assets/images/tperm.png" alt="T permutation">
+            <figcaption class="algorithm">(R U R' U') (R' F) (R2 U' R') U' (R U R' F')</figcaption>
+          </figure>
+        </figure>
       </section>
     </main>
 
     <footer id="">
       <a href="https://vinity12.github.io/">Personal Website</a>
+      <a href="https://github.com/vinity12/">Github</a>
+      <a href="https://www.dicoding.com/users/ashraf_ramadhan276g/academies/">Dicoding</a>
     </footer>
   </body>
 </html>
