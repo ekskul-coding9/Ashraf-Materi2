@@ -19,7 +19,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   min-height: 100%;
-
+  
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
@@ -30,11 +30,11 @@ header {
   border-bottom: 3px solid transparent;
   border-image: linear-gradient(to right,rgba(93, 43, 255, 1) 0%, rgba(51, 255, 167, 1) 33%, rgba(255, 208, 0, 1) 78%, rgba(255, 36, 87, 1) 100%) 1;
   width: 100%;
-  height: 4rem;
+  height: 3.6rem;
 
   /* background: radial-gradient(circle at left,#111121bb 0%, #112219bb 47%, #251317bb 92%); */
   background: #0c0c0cbb;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -44,7 +44,7 @@ header {
 }
 
 #name {
-  font-size: 2rem;
+  font-size: 1.4rem;
   height: 100%;
 
   display: flex;
@@ -52,7 +52,7 @@ header {
 }
 
 #logo { 
-  height: 2rem;
+  height: 1.4rem;
 }
 
 header nav {   
@@ -63,11 +63,13 @@ header nav {
 }
 
 header nav a {
-  height: auto;
   padding: 1.1rem;
 
+  display: flex;
+  align-content: center;
+  
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: white;
 
@@ -101,12 +103,6 @@ aside {
   padding-top: 2rem;
   height: calc(60vh + 4rem);
   width: fit-content;
-}
-
-@media (max-width: 900px /*var(--mobile-screen)*/) {
-  aside {
-    display: none;
-  }
 }
 
 aside nav {
@@ -144,6 +140,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 
   height: 50vh;
 }
@@ -167,7 +164,6 @@ hr {
 
 p {
   line-height: 1.5rem;
-  text-align: justify;
 }
 
 .rubik {
@@ -179,6 +175,8 @@ p {
 }
 
 .caseExamples {
+  margin: 2rem auto;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -207,15 +205,21 @@ p {
   width: 8rem;
 }
 
+.algorithm {
+  font-family: monospace;
+}
+
 /* FOOTER */
 
 footer {
-  background-color: #0f0f0f;
+  margin-top: 2rem;
+  padding: 1.4rem;
 
   display: flex;
   justify-content: center;
+  align-items: center;
 
-  padding: 2rem;
+  background-color: #0f0f0f;
 }
 
 footer a {
@@ -224,6 +228,7 @@ footer a {
 
   color: white;
   text-decoration: underline;
+  text-align: center;
 
   transition: all 0.3s ease;
 }
@@ -233,4 +238,68 @@ footer a:hover {
 
   background-color: white;
   color: #000000;
+}
+
+@media (max-width: 900px /*var(--mobile-screen)*/) {
+  body {
+    font-size: 14px;
+  }
+  
+  header {
+    height: 3rem;
+  }
+  
+  header nav a {
+    padding: 1rem 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  aside {
+    display: none;
+  }
+  
+  main {
+    padding: 0 2rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  p {
+    line-height: 1.4rem;
+    text-align: justify;
+  }
+
+  .rubik {
+    margin: 0.6rem;
+    width: 6rem;
+  }
+
+  .case {
+    margin: 0.5rem;
+    max-width: 6rem;
+  }
+
+  .caseImage {
+    margin: 0.6rem;
+    width: 5.5rem;
+  }
+
+  .algorithm {
+    font-size: 0.7rem;
+  }
+
+  footer {
+    padding: 0.6rem;
+  }
 }
